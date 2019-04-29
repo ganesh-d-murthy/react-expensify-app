@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title> BubbleScore</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+var scores = [60, 50, 60, 58, 54, 54,
+58, 50, 52, 54, 48, 69,
+34, 55, 51, 52, 44, 51,
+69, 64, 66, 55, 52, 61,
+46, 31, 57, 52, 44, 18,
+41, 53, 55, 61, 51, 44];
+
+function BubbleScore(scores)
+{
+for( var i=0; i<scores.length; i++){
+console.log("BubbleSolution" + "#"+ i + "score:"+ scores[i]);
+}
+console.log("Bubble Tests:"+scores.length);
+console.log("Highest bubble score" + highestBubbleScore(scores));
+}
+
+function highestBubbleScore(scoreValue){
+var highestScore = 0;
+for( var i=0; i<scoreValue.length ; i++)
+{
+if(scoreValue[i] > highestScore){
+highestScore = scoreValue[i];
+}
+}
+console.log("Highest Bubble Score:" + highestScore );
+}
+</script>
+</body>
+</html>
